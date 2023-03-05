@@ -3,7 +3,19 @@
 
 # ### 方法二：DFA过滤算法
 import json
- 
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import inch
+from reportlab.lib import colors
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.lib.styles import ParagraphStyle
+from datetime import datetime
+from reportlab.platypus import Spacer
+from reportlab.lib.enums import TA_CENTER
+
 MinMatchType = 1  # 最小匹配规则
 MaxMatchType = 2  # 最大匹配规则
 
@@ -149,3 +161,63 @@ if __name__ == '__main__':
     print('是否包含：', dfa.is_contain(msg))
     print('相匹配的词：', dfa.get_match_word(msg))
     print('替换包含的词：', dfa.replace_match_word(msg))
+
+    # 设置字体
+    pdfmetrics.registerFont(TTFont('msyh', 'msyh.ttc'))
+
+    # 设置样式
+    styles = getSampleStyleSheet()
+    styles.add(ParagraphStyle(name='CustomHeading', fontName='msyh', fontSize=14, spaceAfter=10, alignment=TA_CENTER))
+    # 定义样式
+    # 定义标题样式
+    title_style = ParagraphStyle(name="title",
+                                 fontName="msyh",
+                                 fontSize=24,
+                                 leading=28,
+                                 alignment=TA_CENTER)
+
+    # 定义正文样式
+    body_style = ParagraphStyle(name="body",
+                                fontName="msyh",
+                                fontSize=12,
+                                leading=16,
+                                alignment=TA_CENTER)
+    # 创建pdf文档
+    pdf = SimpleDocTemplate("output.pdf", pagesize=letter)
+
+    # 准备数据
+    data = list(zip(["相匹配的词："]+dfa.get_match_word(msg)))
+
+    # 创建段落和表格
+    elements = []
+    elements.append(Paragraph("敏感词检测报告", title_style))
+    elements.append(Spacer(1, 20))
+    export_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    elements.append(Paragraph(f"导出时间：{export_time}", body_style))
+    # elements.append(Paragraph(text, styles["CustomHeading"]))
+    elements.append(Spacer(1, 20))
+    elements.append(Paragraph("替换前：" + msg, styles["CustomHeading"]))
+    elements.append(Spacer(1, 20))
+    t = Table(data)
+    t.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+        ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'msyh'),
+        ('FONTSIZE', (0, 0), (-1, 0), 14),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+        ('TEXTCOLOR', (0, 1), (-1, -1), colors.black),
+        ('FONTNAME', (0, 1), (-1, -1), 'msyh'),
+        ('FONTSIZE', (0, 1), (-1, -1), 10),
+        ('BOTTOMPADDING', (0, 1), (-1, -1), 8),
+        ('GRID', (0, 0), (-1, -1), 1, colors.black)
+    ]))
+    elements.append(t)
+    elements.append(Spacer(1, 20))
+    elements.append(Paragraph("替换后：" + str(dfa.replace_match_word(msg)), styles["CustomHeading"]))
+
+    # 生成pdf文档
+    pdf.build(elements)
+
+
