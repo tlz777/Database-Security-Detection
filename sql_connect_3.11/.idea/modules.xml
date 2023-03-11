@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sql_connect/sql_connect.iml" filepath="$PROJECT_DIR$/sql_connect/sql_connect.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/sql_connect_3.11.iml" filepath="$PROJECT_DIR$/.idea/sql_connect_3.11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sql_connect.iml" filepath="$PROJECT_DIR$/sql_connect.iml" />
     </modules>
   </component>
 </project>
