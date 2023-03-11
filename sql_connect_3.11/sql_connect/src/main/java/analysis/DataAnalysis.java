@@ -415,15 +415,19 @@ public class DataAnalysis {
         //outPutString(records_string,outputPathTest, listToString(getAllColumnName(databaseNameTest, tableNameTest),','));
 
         //输入需要分析的表名
-        System.out.println("[tip] 请输入待分析数据表名：");
+        /*System.out.println("[tip] 请输入待分析数据表名：");
         Scanner myScanner = new Scanner(System.in);
-        tableNameTest=myScanner.next();
+        tableNameTest=myScanner.next();*/
 
-        //输入结果存放路径
+        /*//测试主动输入结果存放路径
         System.out.println("[tip] 请输入结果存放路径：");
-        myScanner = new Scanner(System.in);
-        outputPathTest=myScanner.next();
-
+        myScanner = new Scanner(System.in);*/
+        outputPathTest="D:\\DetectTempFile";
+        //创建文件夹
+        File directory = new File(outputPathTest);
+        //mkdir
+        boolean hasSucceeded = directory.mkdir();
+        System.out.println("创建文件夹结果（不含父文件夹）：" + hasSucceeded);
         //测试密码强度
         //PwdStrengthScore(con);//测试con对应的密码
 
