@@ -233,7 +233,17 @@ public class DataAnalysis {
         }
         return columnTypes;
     }
-
+    public static void deleteFile(String filePath){
+        File file = new File(filePath);
+        if(file.isFile()){
+            file.delete();
+        }
+        else {
+            String[] childFilePath = file.list();//获取文件夹下所有文件相对路径
+            for (String path : childFilePath)
+                deleteFile(file.getAbsoluteFile() + "/" + path);
+        }
+    }
     //得到所有列的类型（返回JDBC的int类型数组）
     public static List<Integer> getAllFieldTypeInt(String tableName)throws SQLException{
         Connection connection = con.getConnection();
@@ -458,6 +468,12 @@ public class DataAnalysis {
         in.close();
         int re = process.waitFor();
         System.out.println(re);
+
+        //测试删除
+        System.out.println("测试删除");//删除文件夹下所有文件
+        deleteFile(outputPathTest);
+        File file= new File(outputPathTest);
+        file.delete();
     }
 }
 
