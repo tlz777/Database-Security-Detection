@@ -5,17 +5,35 @@ import os
 from OCR.baidu_api import image_ocr
 from detect.Naive_BSF_DFA.Naive_BSF_DFA import DFAFilter
 from flask import Flask, render_template, request
+from detect.AC_version2.AC2 import build_actree
+from sentimentAnalysis.lstm.lstm_test import lstm_predict
 
 app = Flask(__name__)
 
 image_type = ["png","jpg","jpeg"]
-text_type = ["txt","md"]
+text_type = ["txt","md","csv"]
 
 test_path='./test/'
 filter_words_path = "./detect/Naive_BSF_DFA/dirtywords.txt"
-dfa = DFAFilter()
-dfa.parse(filter_words_path)
+# dfa = DFAFilter()
+# dfa.parse(filter_words_path)
 detect_result =[]
+wordlist = []
+from xpinyin import Pinyin
+p = Pinyin()
+
+with open(filter_words_path, encoding="UTF-8") as f:
+    for keyword in f:
+        ks = keyword.strip()
+        result = p.get_pinyin(ks)
+        wordlist.append(ks)
+        s = result.split('-')
+        if s != ['']:
+            for i in range(len(s)):
+                ks_copy = ks.replace(ks[i],s[i])
+                wordlist.append(ks_copy)
+
+actree = build_actree(wordlist=wordlist)
 
 def sensitive_detection(test_path):
     global detect_result
@@ -32,12 +50,21 @@ def sensitive_detection(test_path):
             data = f.readlines()
             text = "\n".join(data)
             f.close()
-        text_result,detect_check = dfa.filter(text)
+        # text_result,detect_check = dfa.filter(text)
+        detect_check = False
+        text_result = text
+
+        lstm_res = lstm_predict(text)
+        if lstm_res[2]>0.8:
+            detect_check = True
+        for i in actree.iter(text):
+            text_result = text_result.replace(i[1][1], "**")
+            detect_check = True
         res={
             'name':path,
             'detect_check':detect_check,
             'text_result':text_result
-            }
+        }
         detect_result.append(res)
 
 @app.route('/')
