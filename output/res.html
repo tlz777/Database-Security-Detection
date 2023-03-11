@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detection-Report</title>
+    <meta charset="UTF-8">
+    <style>
+        /*@font-face{font-family: 'Helvetica Neue', 'Helvetica',"楷体", Helvetica, Arial, sans-serif;src:url("./font.ttf")}*/
+
+    .info {
+        max-width: 1000px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid rgb(64, 1, 103);
+        box-shadow: 0 0 10px rgba(165, 122, 198, 0.15);
+        background-color: white;
+        font-size: 16px;
+        line-height: 24px;
+        /*font-family: 'Helvetica Neue',"楷体", 'Helvetica', Helvetica, Arial, sans-serif;*/
+        color: rgb(81, 61, 88);
+    }
+
+    .info table {
+        width: 70%;
+        line-height: inherit;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+
+    .info table tr.heading td {
+        background: rgb(216, 193, 231);
+        border-top: 3px solid #ba6fc9;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .info table tr.details td {
+        padding-bottom: 5px;
+
+    }
+    .info table tr.details3 td {
+        padding-bottom: 20px;
+        background: rgb(246, 246, 246);
+        border-bottom: 3px solid #ddd;
+    }
+    .info table tr.details2 td {
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+}
+hr.style8:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+    </style>
+</head>
+
+<body style="background-image:url(https://s1.ax1x.com/2023/01/28/pSaP61I.png); background-size:auto 1000px;">
+    <div id="container"  align="center" >
+        <h1 style="font-size:50px; align:center">检测报告</h1>
+    </div>>
+<div class="info">
+        <table cellpadding="0" cellspacing="0">
+        
+            <tr class="heading" >
+                <td>
+                    ./test/pic.png
+                </td>
+            </tr>
+
+            <tr class="details">
+
+                <td >是否检测到敏感词:
+                    True
+                </td>
+            </tr>
+            <tr class="details2" >
+                <td>
+                    过滤结果
+                </td>
+            </tr>
+            <tr class="details3">
+                <td>
+                    基金致富之路@
+十关注
+23小时前财经博主基金博主
+喷的人都死了，你们**的没长眼晴是吗？谁先点炮的看不出来吗？在这反串**
+脑子没病吧。
+                </td>
+            </tr>
+
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+
+        
+            <tr class="heading" >
+                <td>
+                    ./test/无敏感词文本.txt
+                </td>
+            </tr>
+
+            <tr class="details">
+
+                <td >是否检测到敏感词:
+                    False
+                </td>
+            </tr>
+            <tr class="details2" >
+                <td>
+                    过滤结果
+                </td>
+            </tr>
+            <tr class="details3">
+                <td>
+                    我们不会埋葬自己。
+                </td>
+            </tr>
+
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+
+        
+            <tr class="heading" >
+                <td>
+                    ./test/有敏感词文本.txt
+                </td>
+            </tr>
+
+            <tr class="details">
+
+                <td >是否检测到敏感词:
+                    True
+                </td>
+            </tr>
+            <tr class="details2" >
+                <td>
+                    过滤结果
+                </td>
+            </tr>
+            <tr class="details3">
+                <td>
+                    ****好，健康得福报！
+                </td>
+            </tr>
+
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+
+        
+
+        </table>
+    </div>
+</body>
+</html>

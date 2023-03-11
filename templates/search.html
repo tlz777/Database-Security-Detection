@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <title>Detection-Report</title>
+    <meta charset="UTF-8">
     <style>
+        /*@font-face{font-family: 'Helvetica Neue', 'Helvetica',"楷体", Helvetica, Arial, sans-serif;src:url("./font.ttf")}*/
+
     .info {
         max-width: 1000px;
         margin: auto;
@@ -12,7 +15,7 @@
         background-color: white;
         font-size: 16px;
         line-height: 24px;
-        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        /*font-family: 'Helvetica Neue',"楷体", 'Helvetica', Helvetica, Arial, sans-serif;*/
         color: rgb(81, 61, 88);
     }
 
@@ -77,17 +80,17 @@ hr.style8:after {
 
             <tr class="details">
 
-                <td style="font-family:楷体">是否检测到敏感词:
+                <td >是否检测到敏感词:
                     {{file.detect_check}}
                 </td>
             </tr>
             <tr class="details2" >
-                <td style="font-family:楷体">
+                <td>
                     过滤结果
                 </td>
             </tr>
             <tr class="details3">
-                <td style="font-family:楷体">
+                <td>
                     {{file.text_result}}
                 </td>
             </tr>

@@ -7,7 +7,7 @@ from detect.Naive_BSF_DFA.Naive_BSF_DFA import DFAFilter
 from flask import Flask, render_template, request
 from detect.AC_version2.AC2 import build_actree
 from sentimentAnalysis.lstm.lstm_test import lstm_predict
-
+import pdfkit
 app = Flask(__name__)
 
 image_type = ["png","jpg","jpeg"]
@@ -69,7 +69,19 @@ def sensitive_detection(test_path):
 
 @app.route('/')
 def main():
-    return render_template('search.html',files=detect_result)
+    GEN_HTML = "./output/res.html"
+    f = open(GEN_HTML, 'w',encoding='utf-8')
+    html_content = render_template('search.html',files=detect_result)
+    f.write(html_content)
+    # 将wkhtmltopdf.exe程序绝对路径传入config对象
+    # 注意，这里要改成自己的exe路径！
+    path_wkthmltopdf = r'G:/giigle/wkhtmltox/bin/wkhtmltopdf.exe'
+    config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
+    # 生成pdf文件，to_file为文件路径
+    f.close()
+    pdfkit.from_file("./output/res.html", "./output/res.pdf", configuration=config)
+
+    return html_content
 
 if __name__ == '__main__':
     sensitive_detection(test_path)
