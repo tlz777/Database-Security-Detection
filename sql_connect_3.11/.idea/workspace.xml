@@ -1,10 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd492ca4-7dac-4ef1-b265-15f73d43ea37" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="cd492ca4-7dac-4ef1-b265-15f73d43ea37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/dataSources/543c5874-8475-4f9a-88e0-ecb7a6bdcd11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_48.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/libraries/lib___2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/sql_connect.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/analysis/DataAnalysis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/connect/JDBCconnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/test/BruceMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/test/test_connect_sql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/test/test_connect_sql2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/src/main/java/util/SqlTypeToInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/META-INF/sql_connect.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/analysis/DataAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/connect/JDBCconnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/test/BruceMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/test/test_connect_sql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/test/test_connect_sql2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect/target/classes/util/SqlTypeToInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/543c5874-8475-4f9a-88e0-ecb7a6bdcd11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/543c5874-8475-4f9a-88e0-ecb7a6bdcd11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analysis/DataAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analysis/DataAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/dataSources/543c5874-8475-4f9a-88e0-ecb7a6bdcd11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/libraries/lib___2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/sql_connect.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/analysis/DataAnalysis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/analysis/UserAnalysis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/connect/JDBCconnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/test/BruceMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/test/test_connect_sql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/test/test_connect_sql2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/src/main/java/util/SqlTypeToInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/META-INF/sql_connect.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/analysis/DataAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/analysis/UserAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/connect/JDBCconnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/test/BruceMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/test/test_connect_sql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/test/test_connect_sql2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_3.5/target/classes/util/SqlTypeToInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/dataSources/543c5874-8475-4f9a-88e0-ecb7a6bdcd11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/libraries/lib___2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/lib/mysql-connector-java-8.0.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/sql_connect.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/analysis/DataAnalysis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/analysis/UserAnalysis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/connect/JDBCconnect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/entity/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/test/BruceMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/test/test_connect_sql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/test/test_connect_sql2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/src/main/java/util/SqlTypeToInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/analysis/DataAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/analysis/UserAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/connect/JDBCconnect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/test/BruceMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/test/test_connect_sql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/test/test_connect_sql2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql_connect_new/target/classes/util/SqlTypeToInt.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,106 +150,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/connect/JDBCconnect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="18" column="58" selection-start-line="17" selection-start-column="45" selection-end-line="18" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1382#1383#0" expanded="true" />
-                <element signature="e#1413#1414#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analysis/DataAnalysis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="427" column="15" lean-forward="true" selection-end-line="447" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/analysis/UserAnalysis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="54" column="85" selection-start-line="54" selection-start-column="85" selection-end-line="54" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/BruceMatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1250">
-              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Country.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding>
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/SqlTypeToInt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -161,6 +161,9 @@
     <findStrings>
       <find>getConnection()</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -181,11 +184,14 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="alwaysUpdateSnapshots" value="true" />
-        <option name="mavenHome" value="D:/shixishixun/huanjingbianliang/apache-maven-3.6.1/apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../shixishixun/huanjingbianliang/apache-maven-3.6.1/apache-maven-3.6.1" />
         <option name="usePluginRegistry" value="true" />
         <option name="userSettingsFile" value="D:\shixishixun\huanjingbianliang\apache-maven-3.6.1\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -208,6 +214,8 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectId" id="2MrB6Xuf4W8g1Rw3rV2H7ZaYyj1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -286,43 +294,22 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sql_connect_3.11" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/database_proj/Database-Security-Detection/sql_connect_3.11"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\yingwenlujing\mycode\maven\sql_connect\lib" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.DataAnalysis">
+  <component name="RunManager" selected="应用程序.DataAnalysis">
     <configuration name="DataAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="analysis.DataAnalysis" />
       <module name="sql_connect" />
@@ -382,16 +369,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DataAnalysis" />
-        <item itemvalue="Application.UserAnalysis" />
-        <item itemvalue="Application.test_connect_sql2 (1)" />
-        <item itemvalue="Application.SqlTypeToInt" />
-        <item itemvalue="Application.test_connect_sql" />
-      </list>
-    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -414,6 +393,7 @@
       <workItem from="1675167190536" duration="9019000" />
       <workItem from="1678000638115" duration="5733000" />
       <workItem from="1678500679652" duration="8396000" />
+      <workItem from="1678515651932" duration="513000" />
     </task>
     <servers />
   </component>
@@ -488,13 +468,13 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bcbd1ee6-7240-49d5-9ed8-5369e4389510/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://D:/aliyun/jdk/src.zip!/java/lang/String.java">
+    <entry file="jar://$PROJECT_DIR$/../../../aliyun/jdk/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />

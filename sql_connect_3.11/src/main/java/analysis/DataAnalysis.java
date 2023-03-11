@@ -352,6 +352,18 @@ public class DataAnalysis {
         return s;
     }
 
+    //删除文件夹下所有文件
+    public static void deleteFile(String filePath){
+        File file = new File(filePath);
+        if(file.isFile()){
+            file.delete();
+        }
+        else {
+            String[] childFilePath = file.list();//获取文件夹下所有文件相对路径
+            for (String path : childFilePath)
+                deleteFile(file.getAbsoluteFile() + "/" + path);
+        }
+    }
     //输出密码强度检测，有点bug
     public static int PwdStrengthScore(JDBCconnect con) throws SQLException {
         String pwd=con.getPwd();
@@ -441,6 +453,12 @@ public class DataAnalysis {
 
         //测试输出数据库所有表的全信息
         outputDBinfo();
+
+        //测试删除
+        System.out.println("测试删除");//删除文件夹下所有文件
+        deleteFile(outputPathTest);
+        File file= new File(outputPathTest);
+        file .delete();
     }
 }
 
